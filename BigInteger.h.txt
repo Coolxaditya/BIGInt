@@ -1,0 +1,30 @@
++
+#ifndef BigInteger_h
+#define BigInteger_h
+struct node {
+    int data;
+    struct node* next;
+};
+
+struct BigInteger {
+    struct node* L;
+    int length;
+    int sign;
+};
+
+struct node* list(char str[]);
+struct node* reverse(struct node* head)
+int length(struct node* head)
+void display(struct node* head)
+struct node* newNode(int val)
+struct BigInteger createBigInteger(char str[], int sign)
+struct BigInteger add(struct BigInteger num1, struct BigInteger num2)
+struct BigInteger initialize(char *s)
+struct BigInteger sub(struct BigInteger num1, struct BigInteger num2)
+struct BigInteger div1(struct BigInteger num1, struct BigInteger num2)
+struct BigInteger mod(struct BigInteger num1, struct BigInteger num2)
+struct node* insert_tail(struct node* head, int val);
+void free_list(struct node* head);
+struct BigInteger mul(struct BigInteger n1, struct BigInteger n2)
+
+#endif
